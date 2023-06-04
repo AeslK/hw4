@@ -6,10 +6,11 @@
     <%= form.label "title" %>
     <%= form.text_field "title" %>
   </p>
-      <p>
-      <%= form.label "image" %>
-      <%= form.file_field "image" %>
-    </p>
+  <p>
+   <%= form.label "uploaded_image", :class => "form-label" %>
+  <%= form.file_field "uploaded_image", :accept => "image/png,image/jpg,image/jpeg,image/gif", :class => "form-control" %>
+  </p>
+
   <p>
     <%= form.label "description" %>
     <%= form.text_field "description" %>
