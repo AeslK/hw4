@@ -23,7 +23,6 @@ test:
 production:
   <<: *default
   adapter: postgresql
-  database: aesl_kim_tacostagram_production
-  username: aesl_kim_tacostagram
-  password: <%= ENV["AESL_KIM_TACOSTAGRAM_DATABASE_PASSWORD"] %>
-  
+  database: hw4_production
+  username: hw4_tacostagram
+  password: <%= ENV["HW4_DATABASE_PASSWORD"] %>
