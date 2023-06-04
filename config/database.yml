@@ -22,11 +22,8 @@ test:
 
 production:
   <<: *default
-  database: db/production.sqlite3
-
-production:
-  <<: *default
   adapter: postgresql
   database: aesl_kim_tacostagram_production
   username: aesl_kim_tacostagram
   password: <%= ENV["AESL_KIM_TACOSTAGRAM_DATABASE_PASSWORD"] %>
+  
